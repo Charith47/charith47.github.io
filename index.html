@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <title>Ambient Mode</title>
+</head>
+
+<body>
+  <div id="app">
+    <nav class="container">
+      <h1>Youtube Ambient Mode</h1>
+    </nav>
+    <main>
+      <div class="container center">
+        <video id="player-main" class="player" src="./assets/footage.mp4" muted autoplay controls></video>
+        <video id="player-glow" class="player glow" src="./assets/footage.mp4" muted autoplay></video>
+      </div>
+      <div class="container center">
+        <span>Video credits: </span>
+        <a href="https://youtu.be/1MieluM0c6c">
+          Roman De Giuli
+        </a>
+      </div>
+    </main>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
