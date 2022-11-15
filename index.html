@@ -15,7 +15,7 @@
 <body>
   <div id="app">
     <nav class="container">
-      <h1>Youtube Ambient Mode</h1>
+      <h1 class="title">Youtube Ambient Mode</h1>
     </nav>
     <main>
       <div class="container center">
@@ -23,10 +23,28 @@
         <video id="player-glow" class="player glow" src="./assets/footage.mp4" muted autoplay></video>
       </div>
       <div class="container center">
-        <span>Video credits: </span>
-        <a href="https://youtu.be/1MieluM0c6c">
-          Roman De Giuli
-        </a>
+        <div id="controls">
+          <div class="controller">
+            <label for="intensity-slider">Glow Intensity</label>
+            <input class="slider" id="intensity-slider" type="range" min="0" max="100" value="25">
+          </div>
+          <div class="controller">
+            <label for="spread-slider">Spread</label>
+            <input class="slider" id="spread-slider" type="range" min="80" max="180" value="80">
+          </div>
+        </div>
+      </div>
+      <div class="container center">
+        <div class="credit">
+          <span>Video credits: </span>
+          <a href="https://youtu.be/1MieluM0c6c">
+            Roman De Giuli
+          </a>
+        </div>
+        <div class="credit">
+          <span>Created By: </span>
+          <a target="_blank" href="https://www.charithd.me">Charith Dissanayake</a>
+        </div>
       </div>
     </main>
   </div>
